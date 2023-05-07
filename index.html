@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Minnesota Misery - A Minnesota Sports Tradgedy</title>
+  </head>
+  <body>
+    <h1>Time Since Last Minnesota Championship</h1>
+    <h2>October 27th, 1997 - 11:03pm - Minnesota Twins</h2>
+    <h3 id="date-difference"></h3>
+
+    <script>
+      function dateDifference() {
+        const startDate = new Date("1991-10-27T23:03:00");
+        const endDate = new Date(); // Today's date
+        let totalSeconds = (endDate.getTime() - startDate.getTime()) / 1000;
+
+        const years = Math.floor(totalSeconds / (365 * 24 * 60 * 60));
+        totalSeconds %= 365 * 24 * 60 * 60;
+
+        const months = Math.floor(totalSeconds / (30 * 24 * 60 * 60));
+        totalSeconds %= 30 * 24 * 60 * 60;
+
+        const days = Math.floor(totalSeconds / (24 * 60 * 60));
+        totalSeconds %= 24 * 60 * 60;
+
+        const hours = Math.floor(totalSeconds / (60 * 60));
+        totalSeconds %= 60 * 60;
+
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = Math.floor(totalSeconds % 60);
+        const formattedDate = `${years} years ${months} months ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+
+        document.getElementById("date-difference").textContent = formattedDate;
+      }
+
+      // Calculate the date difference once
+      dateDifference();
+
+      setInterval(dateDifference, 1000);
+    </script>
+  </body>
+</html>
