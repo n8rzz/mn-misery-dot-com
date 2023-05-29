@@ -1,0 +1,98 @@
+:root {
+  --mnm-spacing-1x: 10px;
+
+  --mnm-font-family-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --mnm-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --mnm-font-size-base: 1em;
+  --mnm-font-size-lg: var(--mnm-font-size-base) + 0.125em;
+  --mnm-font-size-xl: var(--mnm-font-size-base) + 0.25em;
+  --mnm-font-size-6xl: var(--mnm-font-size-base) + 2.75em;
+}
+
+/*
+start: #050714
+end: #536362
+*/
+
+body {
+  height: 100vh;
+}
+
+/************************************************
+* countup module
+*************************************************/
+.countup {
+  display: flex;
+  justify-content: center;
+}
+
+.countup-item {
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 7px;
+  padding: 10px;
+  width: 135px;
+}
+
+.countup-item + .countup-item {
+  margin-left: 10px;
+}
+
+.countup-item-value {
+  font-size: 4em;
+  padding: 10px
+}
+
+.countup-item-label {
+  font-family: var(--mnm-font-family-sans);
+  font-size: 1.25em;
+}
+
+/************************************************
+* layout
+*************************************************/
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+/************************************************
+* margin
+*************************************************/
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.my-1 {
+  margin: 10px 0;
+}
+
+/************************************************
+* font
+*************************************************/
+.font-sans {
+  font-family: var(--mnm-font-family-sans);
+}
+
+.font-serif {
+  font-family: var(--mnm-font-family-serif);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg {
+  font-size: 1.125em;
+}
+
+.text-xl {
+  font-size: 1.25em;
+}
