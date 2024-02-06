@@ -1,0 +1,63 @@
+.font-sans {
+  font-family: var(--mnm-font-family-sans);
+}
+
+.font-serif {
+  font-family: var(--mnm-font-family-serif);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xs {
+  font-size: var(--mnm-font-size-xs);
+}
+
+.text-sm {
+  font-size: var(--mnm-font-size-sm);
+}
+
+.text-md {
+  font-size: var(--mnm-font-size-md);
+}
+
+.text-lg {
+  font-size: var(--mnm-font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--mnm-font-size-xl);
+}
+
+.text-xxl {
+  font-size: var(--mnm-font-size-xxl);
+}
+
+@media (min-width: 481px) and (max-width: 1080px) {
+  .text-lg {
+    font-size: calc(var(--mnm-font-size-lg) * 0.9);
+  }
+
+  .text-xl {
+    font-size: calc(var(--mnm-font-size-xl) * 0.9);
+  }
+
+  .text-xxl {
+    font-size: calc(var(--mnm-font-size-xxl) * 0.9);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-lg {
+    font-size: calc(var(--mnm-font-size-lg) * 0.75);
+  }
+
+  .text-xl {
+    font-size: calc(var(--mnm-font-size-xl) * 0.75);
+  }
+
+  .text-xxl {
+    font-size: calc(var(--mnm-font-size-xxl) * 0.5);
+  }
+}

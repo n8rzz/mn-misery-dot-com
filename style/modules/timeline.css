@@ -1,0 +1,10 @@
+@import url("../utils/vars.css");
+
+.timeline-container {
+  background-color: #777777;
+  border: 1px solid orange;
+  padding: var(--mnm-spacing-4x);
+  /* offsetting for whitespace and to move away from the countup module */
+  padding-top: 15em;
+  position: relative;
+}

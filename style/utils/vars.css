@@ -1,0 +1,37 @@
+:root {
+  --mnm-spacing-1x: 10px;
+  --mnm-spacing-2x: calc(var(--mnm-spacing-1x) * 2);
+  --mnm-spacing-3x: calc(var(--mnm-spacing-1x) * 3);
+  --mnm-spacing-4x: calc(var(--mnm-spacing-1x) * 4);
+
+  --mnm-color-light-primary: #dfdfdf;
+
+  --mnm-font-family-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --mnm-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --mnm-font-size-base: 1em;
+  --mnm-font-size-xs: var(--mnm-font-size-base) - 0.25em;
+  --mnm-font-size-sm: var(--mnm-font-size-base) - 0.125em;
+  --mnm-font-size-md: var(--mnm-font-size-base);
+  --mnm-font-size-lg: var(--mnm-font-size-base) + 0.125em;
+  --mnm-font-size-xl: var(--mnm-font-size-base) + 0.25em;
+  --mnm-font-size-xxl: var(--mnm-font-size-base) + 2.75em;
+  /*--mnm-font-size-6xl: var(--mnm-font-size-base) + 2.75em;*/
+
+  --mnm-screen-sm: 480px;
+  --mnm-screen-md: 768px;
+  --mnm-screen-lg: 1024px;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+  :root {
+    --mnm-spacing-1x: 5px;
+
+    /*--mnm-font-size-base: 0.9em;*/
+    /*--mnm-font-size-lg: var(--mnm-font-size-base) + 0.125em;*/
+    /*--mnm-font-size-xl: var(--mnm-font-size-base) + 0.25em;*/
+    /*--mnm-font-size-6xl: var(--mnm-font-size-base) + 2.75em;*/
+  }
+}

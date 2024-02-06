@@ -1,12 +1,16 @@
 const COUNT_UP_ITEM_LABELS = ['Years', 'Months', 'Days', 'Hours', 'Minutes', 'Seconds'];
 
 /**
- *
  * @param dateTimeItems {object}
  * @param label {string}
  */
 function updateCountupItem(label, dateTimeItems) {
   const element = document.getElementsByClassName(`countup-item-${label}`)[0];
+
+  if (!element) {
+    return;
+  }
+
   const valueElement = element.getElementsByClassName('countup-item-value')[0];
 
   valueElement.innerText = dateTimeItems[label];
@@ -30,14 +34,12 @@ function dateDifference() {
   totalSeconds %= 60 * 60;
 
   const minutes = Math.floor(totalSeconds / 60);
-  const seconds = Math.floor(totalSeconds % 60);
   const dateTimeItems = {
     years: years,
     months: months,
     days: days,
     hours: hours,
     minutes: minutes,
-    seconds: seconds
   }
 
   // TODO: move this to a collection with models but don't overdue it
@@ -47,6 +49,5 @@ function dateDifference() {
 (() => {
   // Calculate the date difference once
   dateDifference();
-
-  setInterval(dateDifference, 1000);
+  setInterval(dateDifference, 15000);
 })();

@@ -1,0 +1,36 @@
+/************************************************
+* nav
+*************************************************/
+.mainNav {
+  align-items: center;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.mainNav h1 {
+  font-family: var(--mnm-font-family-serif);
+  font-size: var(--mnm-font-size-xl);
+  font-weight: 800;
+}
+
+.mainNav-links,
+.mainNav-socialLinks {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainNav-socialLinks {
+  margin-left: 20px;
+}
+
+.mainNav-links-item,
+.mainNav-socialLinks-item {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}

@@ -1,0 +1,5 @@
+.timeSince {
+  border: 1px solid greenyellow;
+  padding: var(--mnm-spacing-2x) var(--mnm-spacing-2x) 5em var(--mnm-spacing-2x);
+  text-align: center;
+}

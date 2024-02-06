@@ -1,44 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Minnesota Misery - A Minnesota Sports Tragedy</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
   </head>
   <body>
     <header class="container text-center">
-      <h1 class="font-sans my-1">Time Since The Last Minnesota Championship</h1>
+      <nav class="mainNav">
+        <h1 class="font-sans my-1">MN Misery</h1>
+        <div class="mainNav-links">
+          <div class="mainNav-links">
+            <a href="#" class="mainNav-links-item">About</a>
+            <a href="#" class="mainNav-links-item">Contact</a>
+            <a href="#" class="mainNav-links-item">Privacy</a>
+          </div>
+          <div class="mainNav-socialLinks">
+            <div><a href="#" class="mainNav-socialLinks-item">Twitter</a></div>
+            <div><a href="#" class="mainNav-socialLinks-item">Facebook</a></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="timeSince">
+      <h2 class="font-sans my-1">Time Since The Last Minnesota Championship</h2>
+
+      <p>
+        <h2 class="font-sans text-lg mt-3 mb-3">October 27th, 1997 - 11:03pm - Minnesota Twins</h2>
+        <p class="font-sans text-lg mt-3 mb-3">The Minnesota Twins beat the Atlanta Braves, in 10 innings, to win the 1997 Major League Baseball Word Series Championship.</p>
+      </p>
+    </section>
+
+    <section class="timeline-container">
       <ul id="countup" class="countup font-serif my-1">
         <li class="countup-item countup-item-years">
-          <div class="countup-item-value"></div>
-          <div class="countup-item-label">Years</div>
+          <div class="countup-item-value text-xxl"></div>
+          <div class="countup-item-label text-lg">Years</div>
         </li>
         <li class="countup-item countup-item-months">
-          <div class="countup-item-value"></div>
-          <div class="countup-item-label">Months</div>
+          <div class="countup-item-value text-xxl"></div>
+          <div class="countup-item-label text-lg">Months</div>
         </li>
         <li class="countup-item countup-item-days">
-          <div class="countup-item-value"></div>
-          <div class="countup-item-label">Days</div>
+          <div class="countup-item-value text-xxl"></div>
+          <div class="countup-item-label text-lg">Days</div>
         </li>
         <li class="countup-item countup-item-hours">
-          <div class="countup-item-value"></div>
-          <div class="countup-item-label">Hours</div>
+          <div class="countup-item-value text-xxl"></div>
+          <div class="countup-item-label text-lg">Hours</div>
         </li>
         <li class="countup-item countup-item-minutes">
-          <div class="countup-item-value"></div>
-          <div class="countup-item-label">Minutes</div>
-        </li>
-        <li class="countup-item countup-item-seconds">
-          <div class="countup-item-value"></div>
-          <div class="countup-item-label">Seconds</div>
+          <div class="countup-item-value text-xxl"></div>
+          <div class="countup-item-label text-lg">Minutes</div>
         </li>
       </ul>
-      <h2 class="font-serif text-lg mt-3 mb-3">October 27th, 1997 - 11:03pm - Minnesota Twins</h2>
-      <p>The Minnesota Twins beat the Atlanta Braves, in 10 innings, to win the 1997 Major League Baseball Word Series Championship.</p>
-    </header>
+
+      <ol>
+        <li>Unfortunate Historical Event</li>
+        <li>Unfortunate Historical Event</li>
+        <li>Unfortunate Historical Event</li>
+        <li>Unfortunate Historical Event</li>
+        <li>Unfortunate Historical Event</li>
+      </ol>
+    </section>
 
     <script src="app.js"></script>
     <!-- Google tag (gtag.js) -->
